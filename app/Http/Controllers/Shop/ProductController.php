@@ -15,6 +15,8 @@ use App\GalleryImage;
 use App\Color;
 use App\Size;
 use App\User;
+use Mail;
+use App\Mail\NewOrder;
 
 class ProductController extends Controller
 {
@@ -242,6 +244,8 @@ class ProductController extends Controller
 				ProductDetails::find($item->id)->update($data);
 			}
 		}
+		Mail::to($user_info['email'])->send(new NewOrder($order_info));
+
 		\Cart::destroy();
 		return redirect()->route('shop.home');
 	}

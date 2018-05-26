@@ -157,6 +157,24 @@ Route::prefix('admin')->group(function(){
 
 		});
 
+		Route::group(['prefix' => 'orders'], function() {
+
+			Route::get('/','Admin\OrderController@getIndex')->name('admin.order');
+
+			Route::get('/listOrders','Admin\OrderController@anyData')->name('admin.order.dataTable');
+
+			Route::post('/store', 'Admin\OrderController@store')->name('admin.order.store');
+
+			Route::get('/listProduct/{id}','Admin\OrderController@anyDataProduct')->name('admin.order.listProduct.dataTable');
+
+			Route::get('edit/{id}', 'Admin\OrderController@edit');
+
+			Route::put('update/{id}', 'Admin\OrderController@update');
+
+			Route::delete('delete/{id}', 'Admin\OrderController@delete');
+
+		});
+
 		Route::get('/file', function() {
 		    return view('vendor.laravel-filemanager.test');
 		});

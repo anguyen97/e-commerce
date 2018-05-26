@@ -32,6 +32,8 @@ class HomeController extends Controller
             }
     	}
 
+        
+
     	return view('shop.index',[
     		'brand_list' => $brand_list,
     		'category_list' => $category_list,

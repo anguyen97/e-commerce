@@ -23,7 +23,7 @@
 			<!-- ASIDE -->
 			<div id="aside" class="col-md-3">
 				<!-- aside widget -->
-				<div class="aside">
+				{{-- <div class="aside">
 					<h3 class="aside-title">Shop by:</h3>
 					<ul class="filter-list">
 						<li><span class="text-uppercase">color:</span></li>
@@ -51,7 +51,7 @@
 					</ul>
 
 					<button class="primary-btn">Clear All</button>
-				</div>
+				</div> --}}
 				<!-- /aside widget -->
 
 				<!-- aside widget -->
@@ -179,7 +179,7 @@
 				<!-- /STORE -->
 
 				<!-- store bottom filter -->
-				<div class="store-filter clearfix">
+				{{-- <div class="store-filter clearfix">
 					<div class="pull-left">
 						<div class="row-filter">
 							<a href="#"><i class="fa fa-th-large"></i></a>
@@ -212,7 +212,7 @@
 							<li><a href="#"><i class="fa fa-caret-right"></i></a></li>
 						</ul>
 					</div>
-				</div>
+				</div> --}}
 				<!-- /store bottom filter -->
 			</div>
 			<!-- /MAIN -->

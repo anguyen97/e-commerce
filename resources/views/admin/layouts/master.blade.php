@@ -32,7 +32,7 @@
 
     <header class="main-header">
       <!-- Logo -->
-      <a href="index2.html" class="logo">
+      <a href="{{ route('admin.home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>An</b>S</span>
         <!-- logo for regular state and mobile devices -->
@@ -224,7 +224,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="">&nbsp;&nbsp;<i class="fas fa-caret-right"></i> Order list</a></li>
+            <li><a href="{{ route('admin.order') }}">&nbsp;&nbsp;<i class="fas fa-caret-right"></i> Order list</a></li>
           </ul>
         </li>
         <li class="treeview">

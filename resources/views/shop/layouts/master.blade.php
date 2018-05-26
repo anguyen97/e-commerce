@@ -22,7 +22,7 @@
 	<link type="text/css" rel="stylesheet" href="{{ asset('shop_assets/css/slick-theme.css') }}" />
 
 	<!-- nouislider -->
-	{{-- <link type="text/css" rel="stylesheet" href="{{ asset('shop_assets/css/nouislider.min.css') }}" /> --}}
+	<link type="text/css" rel="stylesheet" href="{{ asset('shop_assets/css/nouislider.min.css') }}" />
 
 	<!-- Font Awesome Icon -->
 	<link rel="stylesheet" href="{{ asset('shop_assets/css/font-awesome.min.css') }}">
@@ -392,7 +392,7 @@
 	<script src="{{ asset('admin_assets/bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
 	<script src="{{ asset('admin_assets/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
 	<script src="{{ asset('shop_assets/js/slick.min.js') }}"></script>
-	{{-- <script src="{{ asset('shop_assets/js/nouislider.min.js') }}"></script> --}}
+	<script src="{{ asset('shop_assets/js/nouislider.min.js') }}"></script>
 	<script src="{{ asset('shop_assets/js/jquery.zoom.min.js') }}"></script>
 	<script src="{{ asset('shop_assets/js/main.js') }}"></script>
 
